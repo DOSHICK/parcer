@@ -23,10 +23,9 @@ function deleteFromString(symb) {
 }
 
 function copyOutText() {
-  // Get the text field
   var copyText = document.getElementById("htmlOut");
 
-  copyText.setSelectionRange(0, 99999); // For mobile devices
+  copyText.setSelectionRange(0, 99999); 
 
   navigator.clipboard.writeText(copyText.value);
 
